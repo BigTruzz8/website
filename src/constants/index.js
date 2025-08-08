@@ -2,28 +2,13 @@ import {
     mobile,
     backend,
     creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+  
+    TSwipe,
+    
+
   } from "../assets";
+  import rest from './RestuarantDatabase.png'
+  import cust from './Cust.png'
   
   export const navLinks = [
     {
@@ -41,105 +26,25 @@ import {
   ];
   
   const services = [
-    {
-      title: "Software Engineering Fellow",
-      icon: web,
-    },
+    
     {
       title: "Undergraduate Researcher",
       icon: mobile,
     },
     {
-      title: "Perception Design Programmer",
+      title: "Web Developer",
       icon: backend,
     },
     {
-      title: "Microelectronics Intern",
+      title: "Software Engineering Intern",
       icon: creator,
     },
   ];
   
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
-  ];
+  
   
   const experiences = [
-    {
-      title: "Microelectronics Technical Intern",
-      company_name: "NOVA Systemic",
-      icon: backend,
-      iconBg: "#2e1065",
-      date: "Jul. 2022 - Aug. 2022",
-      points: [
-        "Fulfilled HR functions and curriculum review as well as assist in set up of the camp classroom on location.",
-        "Built numerous projects with Raspberry Pi and Arduino including an atmospheric temperature reader using a touch sensor to receive voltage from the air.",
-        " Aided students to build and create their own projects using Arduino and Raspberry Pi for Engineering showcase."
-      ],
-    },
-    {
-      title: "VT AutoDrive Perception Design Programmer",
-      company_name: "Virginia Tech",
-      icon: backend,
-      iconBg: "#2e1065",
-      date: "Sep. 2023 - May 2024",
-      points: [
-        "Worked on Vehicle-to-Anything communication software using Python that enables vehicles to exchange data and communicate within its environment",
-        "Implementing an Object Analysis node in the vehicle using ROS and C++ to detect road obstacles and hazards to the vehicle.",
-        " Will compete and fully test drive the autonomous vehicle in the AutoDrive Collegiate Competition at University of Michigan."
-        
-      ],
-    },
+    
     {
       title: "Undergraduate Researcher",
       company_name: "Virginia Tech IDPro",
@@ -153,110 +58,66 @@ import {
     },
     {
       title: "Software Engineering Fellow",
-      company_name: "Headstarter AI",
+      company_name: "HeadstarterAI",
       icon: backend,
       iconBg: "#2e1065",
-      date: "July 2024 - Present",
+      date: "Jul. 2024 - Sep 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Deployed an inventory management system for 300+ items Firebase, React.js, and Material UI, hosted on Vercel for seamless performance.",
+        "Working on interactive Virginia Tech Engineering Rate my professors AI chatbot using Google Gemini API, React.js, Next.js, and Vercel.",
+        "Created an interactive customer AI chatbot with Gemini API, React, and Next.js. Deployed chatbot on Vercel hosting platform."
+        
+      ],
+    },
+    {
+      title: "Resarch Intern",
+      company_name: "Virginia Tech National Security Institute",
+      icon: backend,
+      iconBg: "#2e1065",
+      date: "Jan. 2025 - May 2025",
+      points: [
+        "Developed computer vision app that processes 60+ frames per second, tracking 21 hand landmarks per frame.",
+        "Designed Streamlit UI showcasing live military signal classifications and annotated hand landmark overlays, enabling rapid interpretation of 7+ critical operation commands.",
+        "Using Python, OpenCV and MediaPipe, to enable navigation through hand movement for DoD-aligned research at the VT National Security Institute."
+      ],
+    },
+    {
+      title: "Softwawre Engineering Intern",
+      company_name: "Peraton",
+      icon: backend,
+      iconBg: "#2e1065",
+      date: "August. 2025 - Dec. 2025",
+      points: [
+        "Incoming Software Engineering Intern at Peraton."
       ],
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+  
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Travel Swipe",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+        "An interactive travel discovery and booking platform where users can swipe through curated destinations, view detailed information, check real-time weather, and book flights seamlessly. Swipe-based interface to browse 100+ destinations worldwide.",
+      image: TSwipe,
+      source_code_link: "https://travel-swipe.vercel.app/",
     },
     {
-      name: "Job IT",
+      name: "ChefMate",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+        "A restaurant management system that streamlines day-to-day operations for managers and staff. Manage employees, shifts, menus, and ingredients from a single dashboard. Backend REST API with MySQL database hosted on AWS RDS for scalability. Secure login with bcrypt encryption and persistent sessions for authenticated access.",
+      
+      image: rest,
+      source_code_link: "https://github.com/drewcodes0001/restaurant-database",
     },
     {
-      name: "Trip Guide",
+      name: "CustoBot",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+        "Developed an AI-driven customer support system using Google Gemini API, React, and Next.js to automate response times. Implemented a user-friendly interface with Material UI, enhancing user experience and accessibility. Deployed the application on Vercel, ensuring scalability and smooth performance across multiple platforms.",
+      image: cust,
+      source_code_link: "https://customer-support-bhvji6y8m-surya-koteras-projects.vercel.app/",
     },
   ];
   
-  export { services, technologies, experiences, projects };
+  export { services, experiences, projects };
